@@ -10,7 +10,7 @@ The project uses:
 Envelope code based on:
 * [Jarne, Cecilia. "Simple empirical algorithm to obtain signal envelope in three steps." arXiv preprint arXiv:1703.06812 (2017).](https://arxiv.org/pdf/1703.06812.pdf)
 
-#Installation
+## Installation
 
 Install conda, then run:
 ```
