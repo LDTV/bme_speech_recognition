@@ -61,3 +61,6 @@ def cut_silence(input_signal, silence_level = 0.01, envelope = None):
     word_end = len(envelope) - np.argmax(envelope[::-1]>(np.amax(envelope)*silence_level)) - 1
     ret_signal = input_signal[word_beginning: word_end]
     return ret_signal
+
+def RMS_normalization(input_signal):
+	return input_signal/(np.sqrt(np.power(input_signal, 2).sum()/input_signal.size))
